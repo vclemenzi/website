@@ -12,7 +12,7 @@
     />
     <h1><span class="name">Thebigbot</span></h1>
     <!-- Name -->
-    <p>Hello! I'm Thebigbot, a young developer from italy</p>
+    <p>Hello! I'm Thebigbot, a young developer from Italy</p>
     <!-- Introduction -->
 </main>
 
