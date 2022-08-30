@@ -19,6 +19,6 @@
         height: 100px;
         border-radius: 50%;
         border: 2px solid #000;
-        filter: drop-shadow(0 0 3em #d85e0d) drop-shadow(0 0 0.5em #c75a12);
+        filter: drop-shadow(0 0 2em #d85e0d) drop-shadow(0 0 0.3em #c75a12);
     }
 </style>
