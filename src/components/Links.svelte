@@ -1,11 +1,11 @@
 <script lang="ts">
     const openDiscord = () => {
         window.open("https://discord.com/users/703226153678405633", "_blank"); // Open Discord
-    }
+    };
 
     const openGithub = () => {
         window.open("https://github.com/aThebigbot", "_blank"); // Open Github
-    }
+    };
 </script>
 
 <main>
