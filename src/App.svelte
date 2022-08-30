@@ -5,8 +5,8 @@ import Links from "./components/Links.svelte";
 
 <main>
   <div>
-    <Introduction />
-    <Links />
+    <Introduction /> <!-- Introduction Component -->
+    <Links /> <!-- Links Component -->
   </div>
 </main>
 

@@ -1,4 +1,5 @@
 <script lang="ts">
+    // Nothing for now.
 </script>
 
 <main>
@@ -9,16 +10,16 @@
         class="av"
         title="ME!!!!!!!"
     />
-    <h1><span class="name">Thebigbot</span></h1>
-    <p>Hello! I'm Thebigbot, a young developer from italy</p>
+    <h1><span class="name">Thebigbot</span></h1> <!-- Name -->
+    <p>Hello! I'm Thebigbot, a young developer from italy</p> <!-- Introduction -->
 </main>
 
-<style>
+<style> 
     .av {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 2px solid #000;
-        filter: drop-shadow(0 0 2em #d85e0d) drop-shadow(0 0 0.3em #c75a12);
+        width: 100px; /* width */
+        height: 100px; /* height */
+        border-radius: 50%; /* border-radius */
+        border: 2px solid #000; /* border */
+        filter: drop-shadow(0 0 2em #d85e0d) drop-shadow(0 0 0.3em #c75a12); /* drop-shadow */
     }
 </style>

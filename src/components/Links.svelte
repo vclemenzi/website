@@ -1,14 +1,10 @@
 <script lang="ts">
     const openDiscord = () => {
-        window.open("https://discord.com/users/703226153678405633", "_blank");
+        window.open("https://discord.com/users/703226153678405633", "_blank"); // Open Discord
     }
 
     const openGithub = () => {
-        window.open("https://github.com/aThebigbot", "_blank");
-    }
-
-    const openDead = () => {
-        window.open("https://thebigdead.gigantino.dev/", "_blank");
+        window.open("https://github.com/aThebigbot", "_blank"); // Open Github
     }
 </script>
 
@@ -24,37 +20,32 @@
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
         </svg>
     </button>
-    <button class="btn" on:click={() => openDead()}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
-            <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
-          </svg>
-    </button>
   </span>
 </main>
 
 <style>
     span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex; /* flex */
+        justify-content: center; /* justify-content */
+        align-items: center; /* align-items */
     }
-    
+
     .btn {
-        margin: 2rem;
-        border-radius: 30%;
-        border: 2px solid #000;
-        filter: drop-shadow(0 0 0.5em #8048da) drop-shadow(0 0 0.5em #8048da);
-        background-color: transparent;
-        color: #fff;
-        font-weight: bold;
-        border: #fff;
-        font-size: 1.8rem;
-        cursor: pointer;
-        width: 3rem;
-        height: 3rem;
+        margin: 2rem; /* margin */
+        border-radius: 30%; /* border-radius */
+        border: 2px solid #000; /* border */
+        filter: drop-shadow(0 0 0.5em #8048da) drop-shadow(0 0 0.5em #8048da); /* drop-shadow */
+        background-color: transparent; /* background-color */
+        color: #fff; /* color */
+        font-weight: bold; /* font-weight */
+        border: #fff; /* border */
+        font-size: 1.8rem; /* font-size */
+        cursor: pointer; /* cursor */
+        width: 3rem; /* width */
+        height: 3rem; /* height */
     }
 
     .btn:hover {
-        scale: 1.3;
+        scale: 1.3; /* scale */
     }
 </style>
