@@ -4,7 +4,7 @@
 <main>
     <!-- URL: https://avatars.githubusercontent.com/u/77632836?v=4 -->
     <img
-        src="https://avatars.githubusercontent.com/u/77632836?v="
+        src="https://avatars.githubusercontent.com/u/77632836?v=4"
         alt="av"
         class="av"
         title="ME!!!!!!!"
