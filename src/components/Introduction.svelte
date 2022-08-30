@@ -10,11 +10,13 @@
         class="av"
         title="ME!!!!!!!"
     />
-    <h1><span class="name">Thebigbot</span></h1> <!-- Name -->
-    <p>Hello! I'm Thebigbot, a young developer from italy</p> <!-- Introduction -->
+    <h1><span class="name">Thebigbot</span></h1>
+    <!-- Name -->
+    <p>Hello! I'm Thebigbot, a young developer from italy</p>
+    <!-- Introduction -->
 </main>
 
-<style> 
+<style>
     .av {
         width: 100px; /* width */
         height: 100px; /* height */
