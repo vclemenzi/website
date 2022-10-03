@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Introduction from "./components/Introduction.svelte";
-  import Links from "./components/Links.svelte";
+  import Introduction from "../components/Introduction.svelte";
+  import Links from "../components/Links.svelte";
 </script>
 
 <main>

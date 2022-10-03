@@ -43,27 +43,37 @@
 
 <style>
     span {
-        display: flex; /* flex */
-        justify-content: center; /* justify-content */
-        align-items: center; /* align-items */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
     }
 
     .btn {
-        margin: 2rem; /* margin */
-        border-radius: 30%; /* border-radius */
-        border: 2px solid #000; /* border */
-        filter: drop-shadow(0 0 0.5em #8048da) drop-shadow(0 0 0.5em #8048da); /* drop-shadow */
-        background-color: transparent; /* background-color */
-        color: #fff; /* color */
-        font-weight: bold; /* font-weight */
-        border: #fff; /* border */
-        font-size: 1.8rem; /* font-size */
-        cursor: pointer; /* cursor */
-        width: 3rem; /* width */
-        height: 3rem; /* height */
+        margin: 2rem; 
+        border-radius: 30%; 
+        border: 2px solid #000; 
+        filter: drop-shadow(0 0 0.3em #8048da) drop-shadow(0 0 0.3em #8048da); 
+        background-color: transparent; 
+        color: #fff;
+        font-weight: bold; 
+        border: #fff; 
+        font-size: 1.8rem; 
+        cursor: pointer; 
+        width: 3rem; 
+        height: 3rem; 
+        animation: shadow 1s ease-out;
     }
 
     .btn:hover {
-        scale: 1.3; /* scale */
+        scale: 1.3; 
+    }
+
+    @keyframes shadow {
+        0% {
+            filter: drop-shadow(0 0 0em #8048da) drop-shadow(0 0 0em #8048da);
+        }
+        100% {
+            filter: drop-shadow(0 0 0.3em #8048da) drop-shadow(0 0 0.3em #8048da);
+        }
     }
 </style>
