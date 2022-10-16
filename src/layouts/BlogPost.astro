@@ -1,0 +1,62 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <img src={frontmatter.img} />
+    <!-- Tag and date -->
+    <div class="tagdate">
+      <p>{frontmatter.date.day}/{frontmatter.date.month}/{frontmatter.date.year}</p>
+      <p>
+        {frontmatter.tag}
+      </p>
+    </div>
+    <slot />
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        margin: auto;
+        padding: 20px;
+        max-width: 85ch;
+        text-align: left;
+        background-color: #fff;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      i {
+        color: #888;
+        padding: 1 10px;
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+        margin: 0;
+      }
+
+      .tagdate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </body>
+</html>
