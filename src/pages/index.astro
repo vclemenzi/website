@@ -1,3 +1,7 @@
+---
+import PageSlider from "../components/PageSlider.astro";
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +14,8 @@
     <div>
       <!-- Introduction -->
       <h1>👾 Hi, I'm Thebigbot</h1>
+      <PageSlider />
+      <!-- About me -->
       <p>
         Hi! My name is Valerio, but on internet everyone calls me thebigbot. I
         love coding app, website, cli and more stuff. I know a lot of
@@ -49,29 +55,34 @@
       <footer>
         <p>
           <small>
-            This page is made with ❤️ by Thebigbot using <a href="https://astro.build/">Astro!</a>
+            Made with ❤️ by Thebigbot using Astro
           </small>
         </p>
       </footer>
     </div>
+
+
+
+
     <style>
       /* Global */
       body {
         font-family: Verdana, sans-serif;
         margin: auto;
-        padding: 20px;
+        padding: 10px;
         max-width: 65ch;
         text-align: left;
         background-color: #fff;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        line-height: 1.5;
+        line-height: 1.7;
         color: #444;
       }
 
       h1 {
         font-size: 2.5rem;
         icon-size: 2.5rem;
+        line-height: 1;
       }
 
       bold {
@@ -89,8 +100,12 @@
         font-size: 1rem;
       }
 
+      a:hover {
+        color: rgb(13, 162, 231);
+      }
+
       div {
-        line-height: 1.8rem;
+        line-height: 1.7rem;
       }
 
       footer {
@@ -102,9 +117,20 @@
       }
 
       footer a {
+        background-color: #fff;
+        border: none;
+        color: #444;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
         font-size: 0.8rem;
-        padding: 0;
       }
+
+      footer a:hover {
+        color: rgb(13, 162, 231);
+      }
+
 
       /* Color Adaptation */
       @media (prefers-color-scheme: dark) {
@@ -114,6 +140,11 @@
         }
 
         a {
+          background-color: #222;
+          color: #fff;
+        }
+
+        footer a {
           background-color: #222;
           color: #fff;
         }
@@ -129,6 +160,11 @@
           background-color: #fff;
           color: #444;
         }
+
+        footer a {
+          background-color: #fff;
+          color: #444;
+        }
       }
 
       @media (prefers-color-scheme: no-preference) {
@@ -138,6 +174,11 @@
         }
 
         a {
+          background-color: #fff;
+          color: #444;
+        }
+
+        footer a {
           background-color: #fff;
           color: #444;
         }
