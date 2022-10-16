@@ -14,7 +14,9 @@ const { frontmatter } = Astro.props;
     <img src={frontmatter.img} />
     <!-- Tag and date -->
     <div class="tagdate">
-      <p>{frontmatter.date.day}/{frontmatter.date.month}/{frontmatter.date.year}</p>
+      <p>
+        {frontmatter.date.day}/{frontmatter.date.month}/{frontmatter.date.year}
+      </p>
       <p>
         {frontmatter.tag}
       </p>
@@ -56,6 +58,18 @@ const { frontmatter } = Astro.props;
         align-items: center;
         margin: 0;
         padding: 0;
+      }
+
+      @media (max-width: 600px) {
+        .tagdate {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .tagdate p {
+          margin: 0;
+        }
       }
     </style>
   </body>

@@ -1,46 +1,49 @@
 ---
 import PageSlider from "../components/PageSlider.astro";
 
-const posts = (await Astro.glob('./blog/*.{md,mdx}'))
+const posts = await Astro.glob("./blog/*.{md,mdx}");
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thebigbot - Blog</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div>
-        <h1>Blog</h1>
-        <PageSlider />
-        <p>Welcome to Thebigbot's blog. Here you can find all blog posts about programming, various experiences and more! I post without precise frequencies, infact I do this only for funny!</p>
+      <h1>Blog</h1>
+      <PageSlider />
+      <p>
+        Welcome to Thebigbot's blog. Here you can find all blog posts about
+        programming, various experiences and more! I post without precise
+        frequencies, infact I do this only for funny!
+      </p>
 
-        <div>
-          <h3>Posts</h3>
-            <ul>
-                  {
-                    posts.map((post: any) => {
-                      return (
-                        <li>
-                          <i>
-                            {post.frontmatter.date.day}/{post.frontmatter.date.month}/{post.frontmatter.date.year}
-                          </i>
-                          <a href={post.url}>{post.frontmatter.title}</a>
-                        </li>
-                      );
-                    })
-                  }
-            </ul>
-        </div>
+      <div>
+        <h3>Posts</h3>
+        <ul>
+          {
+            posts.map((post: any) => {
+              return (
+                <li>
+                  <i>
+                    {post.frontmatter.date.day}/{post.frontmatter.date.month}/
+                    {post.frontmatter.date.year}
+                  </i>
+                  <a href={post.url}>{post.frontmatter.title}</a>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </div>
     </div>
 
     <style>
-        body {
+      body {
         font-family: Verdana, sans-serif;
         margin: auto;
         padding: 20px;
@@ -93,5 +96,5 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}'))
         padding: 0 10px;
       }
     </style>
-</body>
+  </body>
 </html>
