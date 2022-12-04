@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             alt={""}
           />
           <h1 className="text-center text-[2rem] font-bold">
-            Hello! I'm Thebigbot
+            Hello! I&apos;m Thebigbot
           </h1>
 
           <div>
@@ -46,10 +46,10 @@ const Home: NextPage = () => {
           <hr className="p-2" />
 
           <p className="m-2">
-            Hi! My real name is Valerio but on the internet I'm known as
-            Thebigbot. I love to code and I'm currently learning Rust. I make
-            cli, websites, apps and more! I'm also a big fan of open source and
-            I'm always looking for new projects to contribute to. I use linux
+            Hi! My real name is Valerio but on the internet I&apos;m known as
+            Thebigbot. I love to code and I&apos;m currently learning Rust. I make
+            cli, websites, apps and more! I&apos;m also a big fan of open source and
+            I&apos;m always looking for new projects to contribute to. I use linux
             and i love changing my distro every 3 months.
           </p>
         </div>
