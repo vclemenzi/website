@@ -14,9 +14,9 @@ const Home: NextPage = () => {
 
       <main>
         <div className="content-center items-center text-center">
-          <Image
+          <img
             className="ml-auto mr-auto block w-[35%] rounded-full p-5"
-            src="https://avatars.githubusercontent.com/u/77632836?v=4"
+            src="/favicon.ico"
             alt={""}
           />
           <h1 className="text-center text-[2rem] font-bold">
