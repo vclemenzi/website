@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import { IconAt, IconBrandGithub } from "@tabler/icons";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -13,9 +14,10 @@ const Home: NextPage = () => {
 
       <main>
         <div className="content-center items-center text-center">
-          <img
+          <Image
             className="ml-auto mr-auto block w-[35%] rounded-full p-5"
             src="https://avatars.githubusercontent.com/u/77632836?v=4"
+            alt={""}
           />
           <h1 className="text-center text-[2rem] font-bold">
             Hello! I'm Thebigbot
