@@ -28,10 +28,16 @@ const HomeMobile: NextPage = () => {
               <IconBrandGithub
                 className="m-4 cursor-pointer hover:scale-110"
                 size={35}
+                onClick={() =>
+                   (window.location.href = "https://github.com/athebigbot")
+                }
               />
               <IconAt
                 className="m-4 cursor-pointer hover:scale-110"
                 size={35}
+                onClick={() =>
+                   (window.location.href = "mailto:hello@thebigbot.dev")
+                }
               />
             </div>
             <div className="m-5 flex rounded-md border-2 p-5 text-justify">
