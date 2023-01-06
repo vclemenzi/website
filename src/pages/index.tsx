@@ -46,10 +46,16 @@ const Home: NextPage = () => {
               <IconBrandGithub
                 className="m-4 cursor-pointer hover:scale-110"
                 size={35}
+                onClick={() =>
+                   (window.location.href = "https://github.com/athebigbot")
+                }
               />
               <IconAt
                 className="m-4 cursor-pointer hover:scale-110"
                 size={35}
+                onClick={() =>
+                   (window.location.href = "mailto:hello@thebigbot.dev")
+                }
               />
             </div>
 
