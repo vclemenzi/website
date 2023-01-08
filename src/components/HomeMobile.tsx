@@ -16,15 +16,15 @@ const HomeMobile: NextPage = () => {
       <main>
         {/*<nav className="rounded-md border bg-red-600 p-5">a</nav>*/}
         <div>
-          <div className=" flex justify-center">
+          <div className="flex justify-center">
             <img
               src="/favicon.ico"
-              className="m-8 h-40 w-40 rounded-full border-2"
+              className="m-8 h-40 w-40 rounded-full"
               alt="image"
             />
           </div>
           <div>
-            <div className="m-5 flex h-28 justify-center rounded-md border-2 p-5">
+            <div className="m-5 flex h-28 justify-center rounded-md border-2 border-orange-500 p-5">
               <IconBrandGithub
                 className="m-4 cursor-pointer hover:scale-110"
                 size={35}
@@ -40,7 +40,7 @@ const HomeMobile: NextPage = () => {
                 }
               />
             </div>
-            <div className="m-5 flex rounded-md border-2 p-5 text-justify">
+            <div className="m-5 flex rounded-md border-2 border-pink-700 p-5 text-justify">
               <div>
                 <h1 className="mb-2 text-xl">About Me</h1>
                 <p className="text-md">
@@ -51,7 +51,7 @@ const HomeMobile: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="m-5 flex h-28  justify-center rounded-md border-2 p-5">
+            <div className="m-5 flex h-28  justify-center rounded-md border-2 p-5 border-lime-600">
               <div>
                 <h1 className="m-4 text-4xl">?</h1>
               </div>
@@ -59,7 +59,7 @@ const HomeMobile: NextPage = () => {
           </div>
         </div>
         <div>
-          <div className="m-5 flex  justify-center rounded-md border-2 p-5">
+          <div className="m-5 flex  justify-center rounded-md border-2 border-purple-700 p-5">
             <div className="flex">
               <span className="mr-10 flex">
                 <IconMapPin className="mr-2 inline-block" />{" "}
@@ -75,7 +75,7 @@ const HomeMobile: NextPage = () => {
         </div>
         <div>
           <div>
-            <div className="m-5 flex  h-72 justify-center rounded-md border-2">
+            <div className="m-5 flex  h-72 justify-center rounded-md border-2 border-cyan-500">
               <div className="m-8 h-40 w-40">
                 <h1 className="text-xl">Favorite Stacks</h1>
                 <br />
@@ -108,7 +108,7 @@ const HomeMobile: NextPage = () => {
               </div>
             </div>
 
-            <div className="m-5 flex h-72 justify-center rounded-md border-2">
+            <div className="m-5 flex h-72 justify-center rounded-md border-2 border-blue-600">
               <div className="m-8 h-40 w-40">
                 <h1 className="text-xl">Favorite Apps</h1>
                 <br />

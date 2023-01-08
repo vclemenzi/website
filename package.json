@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-spring/web": "^9.6.1",
     "@tabler/icons": "^1.115.0",
     "@types/qs": "^6.9.7",
     "axios": "^1.2.2",
