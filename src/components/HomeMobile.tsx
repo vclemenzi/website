@@ -77,7 +77,7 @@ const HomeMobile: NextPage = () => {
           <div>
             <div className="m-5 flex  h-72 justify-center rounded-md border-2 border-cyan-500">
               <div className="m-8 h-40 w-40">
-                <h1 className="text-xl">Favourite Stacks</h1>
+                <h1 className="text-xl">Favorite Stacks</h1>
                 <br />
                 <div className="h-40">
                   <button
@@ -110,7 +110,7 @@ const HomeMobile: NextPage = () => {
 
             <div className="m-5 flex h-72 justify-center rounded-md border-2 border-blue-600">
               <div className="m-8 h-40 w-40">
-                <h1 className="text-xl">Favourite Apps</h1>
+                <h1 className="text-xl">Favorite Apps</h1>
                 <br />
                 <div className="h-40">
                   <button
