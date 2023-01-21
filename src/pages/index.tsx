@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               <div className="inline">
                 <div className="m-5 h-72 w-56 rounded-md border-2 border-cyan-500">
                   <div className="m-8 h-40 w-40">
-                    <h1 className="text-xl">Favorite Stacks</h1>
+                    <h1 className="text-xl">Favourite Stacks</h1>
                     <br />
                     <div className="h-40">
                       <button
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
 
                 <div className="m-5 h-72 w-56 rounded-md border-2 border-blue-600">
                   <div className="m-8 h-40 w-40">
-                    <h1 className="text-xl">Favorite Apps</h1>
+                    <h1 className="text-xl">Favourite Apps</h1>
                     <br />
                     <div className="h-40">
                       <button
