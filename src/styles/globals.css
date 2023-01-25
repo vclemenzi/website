@@ -1,20 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 
 body {
-  font-family: Verdana, sans-serif;
-  margin: auto;
-  padding: 10px;
-  max-width: 65ch;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.7;;
+  font-family: 'Indie Flower', cursive;
   background-color: #121212;
-  color: #fff;
-}
-
-main {
-  text-align: center;
-  margin-top: 20%;
+  color: white;
 }

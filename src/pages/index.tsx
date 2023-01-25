@@ -1,36 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
-import { IconBrandGithub, IconAt, IconMapPin, IconClock } from "@tabler/icons";
+import { IconBrandGithub, IconAt } from "@tabler/icons";
 import { type NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import HomeMobile from "../components/HomeMobile";
-import { useSpring, animated } from "@react-spring/web";
-
 const Home: NextPage = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [props] = useSpring(
-    () => ({
-      from: { opacity: 0 },
-      to: { opacity: 1 },
-    }),
-    []
-  );
-
-  useEffect(() => {
-    // Check the user's browser and change the page
-    const ua = navigator.userAgent;
-    if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-      setIsMobile(true);
-    }
-    if (
-      /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
-        ua
-      )
-    ) {
-      setIsMobile(true);
-    }
-  }, []);
-
   return (
     <>
       <Head>
@@ -39,147 +10,75 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <animated.main style={props}>
-        {isMobile ? (
-          <HomeMobile />
-        ) : (
-          <>
-            <div className="flex">
-              <div className="inline">
-                <div className="mr-9 h-56 w-56 rounded-md border-2 border-yellow-300">
-                  <img
-                    src="/favicon.ico"
-                    className="m-8 h-40 w-40 rounded-full"
-                    alt="image"
-                  />
-                </div>
-              </div>
-              <div className="inline">
-                <div className="m-5 flex h-28 w-[26rem] justify-center rounded-md border-2 p-5 border-orange-500">
-                  <IconBrandGithub
-                    className="m-4 cursor-pointer hover:scale-110"
-                    size={35}
-                    onClick={() =>
-                      (window.location.href = "https://github.com/athebigbot")
-                    }
-                  />
-                  <IconAt
-                    className="m-4 cursor-pointer hover:scale-110"
-                    size={35}
-                    onClick={() =>
-                      (window.location.href = "mailto:hello@thebigbot.dev")
-                    }
-                  />
-                </div>
-
-                <div className="m-5 flex h-28 w-[26rem] justify-center rounded-md border-2 p-5 border-lime-600">
-                  <div>
-                    <h1 className="m-4 text-4xl">?</h1>
-                  </div>
-                </div>
+      <main>
+        <div className="hidden lg:block">
+          <div className="flex min-h-screen flex-row items-center justify-center">
+            <div className="mr-20">
+              <h1 className="text-4xl">Hello! I&apos;m Thebigbot</h1>
+              <p className="text-md mt-8 leading-loose text-slate-300">
+                Hello! My name is Valerio, but on the internet, I go by
+                Thebigbot. <br />
+                I love programming and using computers in general, and
+                haven&apos;t touched grass in a while. <br />
+                My favorite technologies are Typescript because my code has to
+                always be typesafe, <br />
+                Nextjs because I want a fantastic routing system, <br />
+                and Tailwindcss to make my websites always look beautiful.{" "}
+                <br />
+                But Rust is also not bad! Want to contact me? Don&apos;t
+                hesitate to do so! <br />
+              </p>
+              <div className="flex">
+                <IconBrandGithub
+                  onClick={() => window.open("https://github.com/athebigbot")}
+                  className="m-3 ml-0 h-8 w-8 cursor-pointer hover:scale-110"
+                />
+                <IconAt
+                  onClick={() =>
+                    (window.location.href = "mailto:hello@thebigbot.dev")
+                  }
+                  className="m-3 h-8 w-8 cursor-pointer hover:scale-110"
+                />
               </div>
             </div>
-            <div className="flex">
-              <div className="inline">
-                <div className="m-5 h-72 w-56 rounded-md border-2 border-cyan-500">
-                  <div className="m-8 h-40 w-40">
-                    <h1 className="text-xl">Favorite Stacks</h1>
-                    <br />
-                    <div className="h-40">
-                      <button
-                        onClick={() =>
-                          (window.location.href =
-                            "https://www.typescriptlang.org/")
-                        }
-                        className="cursor-pointer rounded-lg border p-2 pr-8 pl-8 hover:bg-slate-50 hover:text-black"
-                      >
-                        Typescript
-                      </button>
-                      <button
-                        onClick={() =>
-                          (window.location.href = "https://nextjs.org/")
-                        }
-                        className="mt-3 cursor-pointer rounded-lg border p-2 pr-11 pl-11 hover:bg-slate-50 hover:text-black"
-                      >
-                        Next.js
-                      </button>
-                      <button
-                        onClick={() =>
-                          (window.location.href = "https://tailwindcss.com/")
-                        }
-                        className="mt-3 cursor-pointer rounded-lg border p-2 pr-10 pl-10 hover:bg-slate-50 hover:text-black"
-                      >
-                        Tailwind
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="m-5 h-72 w-56 rounded-md border-2 border-blue-600">
-                  <div className="m-8 h-40 w-40">
-                    <h1 className="text-xl">Favorite Apps</h1>
-                    <br />
-                    <div className="h-40">
-                      <button
-                        onClick={() =>
-                          (window.location.href = "https://insomnia.rest/")
-                        }
-                        className="cursor-pointer rounded-lg border p-2 pr-8 pl-8 hover:bg-slate-50 hover:text-black"
-                      >
-                        Insomnia
-                      </button>
-                      <button
-                        onClick={() =>
-                          (window.location.href =
-                            "https://code.visualstudio.com/")
-                        }
-                        className="mt-3 cursor-pointer rounded-lg border p-2 pr-10 pl-10 hover:bg-slate-50 hover:text-black"
-                      >
-                        Vscode
-                      </button>
-                      <button
-                        onClick={() =>
-                          (window.location.href = "https://alacritty.org/")
-                        }
-                        className="mt-3 cursor-pointer rounded-lg border p-2 pr-9 pl-9 hover:bg-slate-50 hover:text-black"
-                      >
-                        Alacritty
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="inline">
-                <div className="m-5 flex w-[26rem] justify-center rounded-md border-2 border-purple-700 p-5">
-                  <div className="flex">
-                    <span className="mr-10 flex">
-                      <IconMapPin className="mr-2 inline-block" />{" "}
-                      <p className="inline-block cursor-default">Italy</p>
-                    </span>
-
-                    <span className="flex">
-                      <IconClock className="mr-2 inline-block " />{" "}
-                      <p className="inline-block cursor-default">UTC +01:00</p>
-                    </span>
-                  </div>
-                </div>
-                <div className="m-5 flex w-[26rem] rounded-md border-2 p-5 text-justify border-pink-700">
-                  <div>
-                    <h1 className="mb-2 text-xl">About Me</h1>
-                    <p className="text-md">
-                      Hi! My name is Thebigbot, and I am a web developer with 2
-                      years of experience in the field. I specialize in React
-                      ecc.., and have a passion for creating intuitive and
-                      user-friendly websites and applications. Contact me for
-                      any question! :)
-                    </p>
-                  </div>
-                </div>
+            <div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/favicon.ico" alt="" className="h-60 w-60" />
+            </div>
+          </div>
+        </div>
+        <div className="sm:visible md:visible lg:invisible xl:invisible 2xl:invisible">
+          <div className="flex min-h-screen flex-row items-center justify-center">
+            <div className="p-8">
+              <h1 className="text-center text-4xl">
+                Hello! I&apos;m Thebigbot
+              </h1>
+              <p className="text-md mt-8 text-justify leading-loose text-slate-300 md:mr-14 md:ml-14">
+                Hello! My name is Valerio, but on the internet, I go by
+                Thebigbot. I love programming and using computers in general,
+                and haven&apos;t touched grass in a while. My favorite
+                technologies are Typescript because my code has to always be
+                typesafe, Nextjs because I want a fantastic routing system, and
+                Tailwindcss to make my websites always look beautiful. But Rust
+                is also not bad! Want to contact me? Don&apos;t hesitate to do
+                so!
+              </p>
+              <div className="mt-4 flex justify-center">
+                <IconBrandGithub
+                  onClick={() => window.open("https://github.com/athebigbot")}
+                  className="m-3 ml-0 h-10 w-10 cursor-pointer hover:scale-110"
+                />
+                <IconAt
+                  onClick={() =>
+                    (window.location.href = "mailto:hello@thebigbot.dev")
+                  }
+                  className="m-3 h-10 w-10 cursor-pointer hover:scale-110"
+                />
               </div>
             </div>
-          </>
-        )}
-      </animated.main>
+          </div>
+        </div>
+      </main>
     </>
   );
 };
