@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="sm:visible md:visible lg:invisible xl:invisible 2xl:invisible">
+        <div className="sm:visible md:hidden lg:hidden xl:hidden 2xl:hidden">
           <div className="flex min-h-screen flex-row items-center justify-center">
             <div className="p-8">
               <h1 className="text-center text-4xl">
