@@ -35,9 +35,9 @@ const Home: NextPage = () => {
             Contact
           </button>
         </div>
-        <div className="h-[45vh] justify-center bg-[#c7b9ff] p-10">
-          <div className="h-[18vh] border-2 border-r-[6px] border-b-[6px] border-black bg-[#0fa958] p-4 ml-28 mr-28">
-            <h1 className="text-4xl font-semibold mb-4">About Me!</h1>
+        <div className="flex justify-center bg-[#c7b9ff] p-10">
+          <div className="ml-28 mr-28 h-[18vh] border-2 border-r-[6px] border-b-[6px] border-black bg-[#0fa958] p-4">
+            <h1 className="mb-4 text-4xl font-semibold">About Me!</h1>
             <p>
               Hello! My name is Valerio, but on the internet. I love programming
               and using computers in general, and haven&apos;t touched grass in
@@ -47,6 +47,32 @@ const Home: NextPage = () => {
               beautiful. But Rust is also not bad! Want to contact me?
               Don&apos;t hesitate to do so!
             </p>
+          </div>
+        </div>
+        <div className="flex justify-center bg-[#c7b9ff] p-10">
+          <div className="border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center">
+            <h1 className="mb-4 text-4xl font-semibold">Favorite Stacks</h1>
+            <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
+              Next.js
+            </button>
+            <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
+              Tailwind
+            </button>
+            <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
+              Typescript
+            </button>
+          </div>
+          <div className="ml-12 border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center">
+            <h1 className="mb-4 text-4xl font-semibold">Favorite Apps</h1>
+            <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
+              Insomnia
+            </button>
+            <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
+              Vscode
+            </button>
+            <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
+              Alacritty
+            </button>
           </div>
         </div>
       </main>
