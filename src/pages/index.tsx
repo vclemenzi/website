@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           </button>
         </div>
         <div className="flex justify-center bg-[#c7b9ff] p-10">
-          <div className="ml-28 mr-28 h-[18vh] border-2 border-r-[6px] border-b-[6px] border-black bg-[#0fa958] p-4">
+          <div className="ml-28 mr-28 border-2 border-r-[6px] border-b-[6px] border-black bg-[#0fa958] p-4">
             <h1 className="mb-4 text-4xl font-semibold">About Me!</h1>
             <p>
               Hello! My name is Valerio, but on the internet. I love programming
