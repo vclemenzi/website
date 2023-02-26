@@ -12,11 +12,11 @@ const Home: NextPage = () => {
 
       <main>
         <div className="flex h-[45vh] items-center justify-center bg-[#ffc700] p-10">
-          <div className="mr-36 animate-fall border-2 border-r-[6px] border-b-[6px] border-black bg-[#f3763d] p-6 drop-shadow-2xl">
+          <div className="lg:mr-36 md:mr-36 text-center lg:text-left md:text-left animate-fall border-2 border-r-[6px] border-b-[6px] border-black bg-[#f3763d] p-6 drop-shadow-2xl">
             <h1 className="text-4xl font-semibold">Valerio Clemenzi</h1>
             <p>A young web developer</p>
           </div>
-          <div>
+          <div className="hidden lg:block md:block">
             {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
             <img
               src="/favicon.ico"
@@ -25,18 +25,18 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="flex h-[10vh] items-center justify-center bg-[#5551ff] p-10">
-          <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-12 pr-12 hover:mr-4 hover:border-r-2 hover:border-b-2">
+          <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 lg:pl-12 lg:pr-12 md:pl-10 md:pr-10 pl-6 pr-6 hover:mr-4 hover:border-r-2 hover:border-b-2">
             GitHub
           </button>
-          <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-10 pr-10 hover:mr-4 hover:border-r-2 hover:border-b-2">
+          <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 lg:pl-10 lg:pr-10 md:pl-10 md:pr-10 pl-5 pr-5 hover:mr-4 hover:border-r-2 hover:border-b-2">
             Discord
           </button>
-          <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-10 pr-10 hover:mr-4 hover:border-r-2 hover:border-b-2">
+          <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 lg:pl-10 lg:pr-10 md:pl-10 md:pr-10 pl-5 pr-5 hover:mr-4 hover:border-r-2 hover:border-b-2">
             Contact
           </button>
         </div>
         <div className="flex justify-center bg-[#c7b9ff] p-10">
-          <div className="ml-28 mr-28 border-2 border-r-[6px] border-b-[6px] border-black bg-[#0fa958] p-4">
+          <div className="lg:ml-72 lg:mr-72 md:ml-12 md:mr-12 border-2 border-r-[6px] border-b-[6px] border-black bg-[#0fa958] p-4">
             <h1 className="mb-4 text-4xl font-semibold">About Me!</h1>
             <p>
               Hello! My name is Valerio, but on the internet. I love programming
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center bg-[#c7b9ff] p-10">
+        <div className="lg:flex md:flex block justify-center bg-[#c7b9ff] p-10">
           <div className="border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center">
             <h1 className="mb-4 text-4xl font-semibold">Favorite Stacks</h1>
             <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
               Typescript
             </button>
           </div>
-          <div className="ml-12 border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center">
+          <div className="sm:ml-12 lg:ml-12 border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center">
             <h1 className="mb-4 text-4xl font-semibold">Favorite Apps</h1>
             <button className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2">
               Insomnia
@@ -75,6 +75,9 @@ const Home: NextPage = () => {
             </button>
           </div>
         </div>
+        <footer className="flex h-[10vh] items-center justify-center bg-[#5551ff] p-2">
+          <h1>Made by Valerio Clemenzi with ❤ | Made with Nextjs & Tailwindcss</h1>
+        </footer>
       </main>
     </>
   );
