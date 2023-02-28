@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <main>
         {/* HEAD */}
         <div className="flex h-[45vh] items-center justify-center bg-[#ffc700] p-10">
-          <div className="animate-fall border-2 border-r-[6px] border-b-[6px] border-black bg-[#f3763d] p-6 text-center drop-shadow-2xl md:mr-36 md:text-left lg:mr-36 lg:text-left">
+          <div className="border-2 border-r-[6px] border-b-[6px] border-black bg-[#f3763d] p-6 text-center drop-shadow-2xl md:mr-36 md:text-left lg:mr-36 lg:text-left">
             <h1 className="text-4xl font-semibold">Valerio Clemenzi</h1>
             <p>A young web developer</p>
           </div>
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
             <img
               src="/favicon.ico"
-              className="h-44 w-44 animate-fall rounded-full border-8 border-green-600"
+              className="h-44 w-44 rounded-full border-8 border-green-600"
             />
           </div>
         </div>
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
               onClick={() => {
                 window.open("https://nextjs.org/");
               }}
-              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2"
+              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 lg:pr-20 md:pl-20 md:pr-20 pl-[4.3rem] pr-[4.3rem] hover:mr-4 hover:border-r-2 hover:border-b-2"
             >
               Next.js
             </button>
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
               onClick={() => {
                 window.open("https://tailwindcss.com/");
               }}
-              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2"
+              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 lg:pr-20 md:pl-20 md:pr-20 pl-16 pr-16 hover:mr-4 hover:border-r-2 hover:border-b-2"
             >
               Tailwind
             </button>
@@ -91,18 +91,18 @@ const Home: NextPage = () => {
               onClick={() => {
                 window.open("https://www.typescriptlang.org/");
               }}
-              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2"
+              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 md:pl-20 md:pr-20 pl-14 pr-14 hover:mr-4 hover:border-r-2 hover:border-b-2"
             >
               Typescript
             </button>
           </div>
-          <div className="border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center sm:ml-12 lg:ml-12">
+          <div className="mt-5 border-2 border-r-[6px] border-b-[6px] border-black bg-[#a259ff] p-5 text-center sm:ml-12 md:ml-0 lg:ml-12 lg:mt-0">
             <h1 className="mb-4 text-4xl font-semibold">Favorite Apps</h1>
             <button
               onClick={() => {
                 window.open("https://insomnia.rest/");
               }}
-              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2"
+              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-16 pr-16 hover:mr-4 hover:border-r-2 hover:border-b-2 md:pl-20 md:pr-20 lg:pl-20 lg:pr-20"
             >
               Insomnia
             </button>
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
               onClick={() => {
                 window.open("https://code.visualstudio.com/");
               }}
-              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2"
+              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-[4.5rem] pr-[4.5rem] hover:mr-4 hover:border-r-2 hover:border-b-2 md:pl-20 md:pr-20 lg:pr-20"
             >
               Vscode
             </button>
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
               onClick={() => {
                 window.open("https://alacritty.org/");
               }}
-              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-20 pr-20 hover:mr-4 hover:border-r-2 hover:border-b-2"
+              className="m-3 border-2 border-r-[6px] border-b-[6px] border-black bg-white p-2 pl-[3.5rem] pr-[3.5rem] hover:mr-4 hover:border-r-2 hover:border-b-2 md:pl-20 md:pr-20 lg:pr-20"
             >
               Alacritty
             </button>
