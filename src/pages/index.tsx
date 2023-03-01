@@ -64,8 +64,8 @@ const Home: NextPage = () => {
 
       <main className="bg-cyan-400">
         {/* Header */}
-        <div className="flex w-full items-center justify-center gap-6 bg-yellow-400 py-6">
-          <section className="neobrutalistic-border animate-fall bg-orange-400 p-3">
+        <div className="flex h-[40vh] items-center justify-center gap-6 bg-yellow-400 py-6">
+          <section className="neobrutalistic-border animate-fall bg-orange-400 p-4">
             <h1 className="text-3xl font-semibold">Valerio Clemenzi</h1>
             <p>A young web developer</p>
           </section>
