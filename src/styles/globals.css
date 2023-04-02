@@ -1,9 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 
-@layer components {
-  .neobrutalistic-border {
-    @apply rounded-lg border-2 border-b-4 border-r-4 border-black;
-  }
+body {
+  @apply bg-background text-white;
+  font-family: 'Pangolin', cursive;
+}
+
+.box {
+  @apply border border-gray-200 rounded-md p-4 max-w-sm;
+}
+
+.box:hover {
+  @apply border-gray-400 cursor-default;
 }
