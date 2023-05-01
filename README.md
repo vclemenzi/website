@@ -1,3 +1,2 @@
-# thebigbot.dev
-
-My personal and super sexy website
+# vclemenzi.dev
+My personal website
