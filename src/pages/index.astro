@@ -1,6 +1,124 @@
 ---
+import IconMail from "../components/icons/IconMail.astro";
+import IconGithub from "../components/icons/IconGithub.astro";
+import IconTelegram from "../components/icons/IconTelegram.astro";
+import IconMatrix from "../components/icons/IconMatrix.astro";
 ---
 
-<main>
+<main class="container mx-auto md:px-36 lg:px-36 px-4 md:py-36 lg:py-36 py-8">
+  <h1 class="text-xl font-semibold flex items-center">
+    <img
+      src="/favicon.ico"
+      alt="pic"
+      class="rounded-full w-16 h-16 mr-4 hover:animate-spin hover:cursor-wait"
+    />
+    Hello! I&apos;m Valerio Clemenzi
+  </h1>
+  <br />
+  <p class="font-light">
+    Hi! I&apos;m Valerio Clemenzi, I come from Italy, and I really enjoy using
+    computers and experimenting with and learning about the world surrounding
+    this field. Currently, I&apos;m still attending school, but I hope that this
+    passion can become a job.
+  </p>
+  <br />
+  <p class="font-light">
+    I can use JavaScript and TypeScript quite well, along with many libraries
+    that can be found on the npm registry (such as Express, etc.). Lately,
+    I&apos;ve been looking at Deno and I really like it, especially now that you
+    can use npm modules. I enjoy using many frameworks, but primarily React,
+    although I&apos;m starting to look into Svelte. Meanwhile, I&apos;m learning
+    Rust, a fantastic language that allows me to express myself best thanks to
+    all its functions (I won&apos;t list them all because if you don&apos;t live
+    under a rock, you&apos;ve probably heard about them many times). Anyway, I
+    never refuse a game of Rocket, Minecraft, or Grand Theft Auto 5, which is my
+    favorite game, but I always end up breaking it with mods and have to
+    reinstall it :(
+  </p>
 
+  <br />
+  {/* Tools */}
+  <br />
+
+  <h2 class="text-xl font-semibold">Favourite Tools</h2>
+  <br />
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="box">
+      <h3 class="text-lg font-semibold">Visual Studio Code</h3>
+      <p>I use Visual Studio Code as my main editor, and I really like it.</p>
+    </div>
+
+    <div class="box">
+      <h3 class="text-lg font-semibold">Insomnia</h3>
+      <p>
+        I use Insomnia to test my APIs. It&apos;s really easy to use, and
+        it&apos;s really fast.
+      </p>
+    </div>
+
+    <div class="box">
+      <h3 class="text-lg font-semibold">Alacritty</h3>
+      <p>I use Alacritty as my terminal emulator. It&apos;s really fast.</p>
+    </div>
+  </div>
+
+  <br />
+  {/* Links */}
+  <br />
+
+  <h2 class="text-xl font-semibold">Links</h2>
+  <br />
+  <div>
+    <a href="mailto:my@vclemenzi.dev" class="flex items-center">
+      <IconMail />
+      <span class="ml-2 hover:underline">
+        <code>my@vclemenzi.dev</code>
+      </span>
+    </a>
+    <a href="https://github.com/vclemenzi" class="flex items-center">
+      <IconGithub />
+      <span class="ml-2 hover:underline">
+        <code>github.com/vclemenzi</code>
+      </span>
+    </a>
+    <a href="https://t.me/vclemenzi" class="flex items-center">
+      <IconTelegram />
+      <span class="ml-2 hover:underline">
+        <code>t.me/@vclemenzi</code>
+      </span>
+    </a>
+    <a
+      href="https://matrix.to/#/@thebigbot:matrix.org"
+      class="flex items-center"
+    >
+      <IconMatrix />
+      <span class="ml-2 hover:underline">
+        <code>@thebigbot:matrix.org</code>
+      </span>
+    </a>
+  </div>
+
+  <br />
+
+  <footer>
+    <p class="text-sm font-light">
+      Valerio Clemenzi &copy; 2023 - Made with Astro and Tailwind CSS
+    </p>
+  </footer>
 </main>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&display=swap");
+  body {
+    @apply bg-background text-white;
+    font-family: "Averia Libre", cursive;
+  }
+
+  .box {
+    @apply border border-gray-200 rounded-md p-4 max-w-sm;
+  }
+
+  .box:hover {
+    @apply border-gray-400 cursor-default;
+  }
+</style>
