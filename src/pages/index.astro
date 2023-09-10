@@ -1,65 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro"
 ---
 
 <Layout title="Valerio Clemenzi">
-  <main class="container mx-auto px-4 py-8 md:px-28 md:py-28 lg:px-28 lg:py-28 xl:px-44 xl:py-44">
+
+ <Navbar />
+
+ <div class="flex mt-24 mb-8">
+  <div class="w-1/2 flex justify-center items-center">
     <div>
-      <h1 class="mb-3 flex items-center text-2xl font-bold">
-        <img class="mr-2 h-14 w-14 rounded-full" src="/favicon.ico" />
-         Hello! I'm Valerio Clemenzi
-      </h1>
-      <p>
-        Hi! I&apos;m Valerio Clemenzi, I come from Italy, and I really enjoy using computers and
-        experimenting with and learning about the world surrounding this field. Currently, I&apos;m
-        still attending school, but I hope that this passion can become a job.
-      </p>
-      <br />
-      <p>
-        I can use <a href="https://it.wikipedia.org/wiki/JavaScript">JavaScript</a> and <a
-          href="https://www.typescriptlang.org/">TypeScript</a
-        > quite well, along with many libraries that can be found on the <a
-          href="https://www.npmjs.com/">npm</a
-        > registry (such as Express, etc.). Lately, I&apos;ve been looking at <a
-          href="https://deno.com/">Deno</a
-        > and I really like it, especially now that you can use npm modules. I enjoy using many
-        frameworks, but primarily <a href="https://reactjs.org/">React</a>, although I&apos;m
-        starting to look into <a href="https://svelte.dev/">Svelte</a>. Meanwhile, I&apos;m learning
+      <h1 class="text-text text-5xl font-bold">Hello, I'm <span class="underline">Valerio</span></h1>
+      <p class="text-gray-500 mt-2 text-lg">I am a young Italian developer</p>
 
-
-        <a href="https://www.rust-lang.org/">Rust</a>, a fantastic language that allows me to
-        express myself best thanks to all its functions (I won&apos;t list them all because if you
-        don&apos;t live under a rock, you&apos;ve probably heard about them many times). Anyway, I
-        never refuse a game of Rocket, Minecraft, or Grand Theft Auto 5, which is my favorite game,
-        but I always end up breaking it with mods and have to reinstall it :(
-      </p>
-      <br />
-      <p>
-        I use neovim as my main editor, with my personal configuration. I also use the Arch Linux
-        distribution, with the i3 window manager and my own personal configuration, which can be
-        found <a href="https://github.com/vclemenzi/rice">here</a>. For my terminal, I use alacritty
-        and tmux to increase productivity. My favorite theme is called <a
-          href="https://catppuccin.com/">catppuccin</a
-        >.
-      </p>
-
-      <div>
-        <a class="link" href="inbox@vclemenzi.dev">
-          <code>inbox@vclemenzi.dev</code>
-        </a>
-         |
-        <a class="link" href="https://github.com/vclemenzi">
-          <code>github.com/vclemenzi</code>
-        </a>
-         |
-        <a class="link" href="https://t.me/vclemenzi">
-          <code>t.me/vclemenzi</code>
-        </a>
-         |
-        <a class="link" href="https://matrix.to/#/@thebigbot:matrix.org">
-          <code>@thebigbot:matrix.org</code>
-        </a>
+      <div class="flex mt-4">
+        <button class="rounded-md p-2 pl-7 pr-7 bg-gyellow text-text mr-3 hover:underline font-semibold">
+          Who i am?
+        </button>
+        <button class="rounded-md p-2 pl-7 pr-7 bg-gpurple text-text hover:underline font-semibold">
+          What i do?
+        </button>
       </div>
     </div>
-  </main>
+  </div>
+
+  <div class="w-1/2 flex justify-center items-center">
+    <img src="/favicon.ico" class="rounded-full w-60 h-60 border-ggreen border-8" />
+  </div>
+ </div>
+
+ <hr />
 </Layout>
