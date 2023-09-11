@@ -1,11 +1,14 @@
 ---
 interface Props {
   src: string;
+  id: string;
 }
 
-const { src } = Astro.props as Props;
+const { src, id } = Astro.props as Props;
 ---
 
 <div class="p-4">
-  <img class="rounded-xl" width="100" height="100" src={src} />
+  <a href={`/skills/${id}`}>
+    <img class="rounded-xl transition hover:scale-110" width="100" height="100" src={src} />
+  </a>
 </div>

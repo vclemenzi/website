@@ -1,69 +1,93 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
-import Tool from "../components/Tool.astro";
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Tool from "../../components/Tool.astro";
 
 interface Tool {
   src: string;
+  id: string;
 }
 
 const tools: Tool[] = [
   {
     src: "https://skillicons.dev/icons?i=go",
+    id: "go",
   },
   {
     src: "https://skillicons.dev/icons?i=rust",
+    id: "rust",
   },
   {
     src: "https://skillicons.dev/icons?i=js",
+    id: "js",
   },
   {
     src: "https://skillicons.dev/icons?i=ts",
+    id: "ts",
   },
   {
     src: "https://skillicons.dev/icons?i=react",
+    id: "react",
   },
   {
     src: "https://skillicons.dev/icons?i=nextjs",
+    id: "nextjs",
   },
   {
     src: "/tools/jwt.png",
+    id: "jwt",
   },
   {
     src: "https://skillicons.dev/icons?i=nodejs",
+    id: "nodejs",
   },
   {
     src: "https://skillicons.dev/icons?i=redis",
+    id: "redis",
   },
   {
     src: "https://skillicons.dev/icons?i=postgresql",
+    id: "postgresql",
   },
   {
     src: "https://skillicons.dev/icons?i=mongodb",
+    id: "mongodb",
   },
   {
     src: "https://skillicons.dev/icons?i=astro",
+    id: "astro",
   },
   {
     src: "https://skillicons.dev/icons?i=tailwindcss",
+    id: "tailwindcss",
   },
   {
     src: "https://skillicons.dev/icons?i=vite",
+    id: "vite",
   },
   {
     src: "https://skillicons.dev/icons?i=neovim",
+    id: "neovim",
   },
   {
     src: "https://skillicons.dev/icons?i=github",
+    id: "github",
   },
   {
     src: "https://skillicons.dev/icons?i=linux",
+    id: "linux",
   },
   {
     src: "https://skillicons.dev/icons?i=tauri",
+    id: "tauri",
   },
   {
     src: "https://skillicons.dev/icons?i=docker",
+    id: "docker",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=bash",
+    id: "bash",
   },
 ];
 ---
@@ -80,7 +104,7 @@ const tools: Tool[] = [
     <div class="grid grid-cols-2 place-items-center gap-4 md:grid-cols-5">
       {
         tools.map((y) => {
-          return <Tool src={y.src} />;
+          return <Tool src={y.src} id={y.id} />;
         })
       }
     </div>
