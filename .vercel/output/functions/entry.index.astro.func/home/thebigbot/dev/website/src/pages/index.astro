@@ -1,0 +1,99 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Valerio Clemenzi">
+  <Navbar />
+
+  <div class="mb-8 mt-24 text-center md:flex md:text-left">
+    <div class="md:flex md:w-1/2 md:items-center md:justify-center">
+      <div>
+        <h1 class="text-5xl font-bold text-text">
+          Hello, I'm <span class="underline">Valerio</span>
+        </h1>
+        <p class="mt-2 text-lg text-gray-500">I am a young Italian developer</p>
+
+        <div class="mt-4 flex justify-center md:justify-start">
+          <a href="#about">
+            <button
+              class="mr-3 rounded-md bg-gyellow p-2 pl-7 pr-7 font-semibold text-text hover:underline"
+            >
+              Who am I?
+            </button>
+          </a>
+          <a href="/skills">
+            <button
+              class="rounded-md bg-gpurple p-2 pl-7 pr-7 font-semibold text-text hover:underline"
+            >
+              What do I do?
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:flex md:w-1/2 md:items-center md:justify-center">
+      <img src="/favicon.ico" class="h-60 w-60 rounded-full border-8 border-ggreen" />
+    </div>
+  </div>
+
+  <hr />
+
+  <div id="about" class="m-5 rounded-md p-4 2xl:ml-96 2xl:mr-96">
+    <h1 class="text-4xl font-bold text-text">About Me!</h1>
+    <p class="mt-3 text-lg text-text">
+      Hello, I'm Valerio, and I'm a 14-year-old computer enthusiast. I've been passionate about
+      computer science for about 2 years now. It all began when I first tried to create a bot for
+      the Discord messaging platform, and it was love at first sight. Since that day, I've been
+      constantly learning new things: new programming languages, new habits, and new goals. I
+      quickly transitioned from Windows to Linux and replaced many of my software with open-source
+      versions that respected my privacy. In no time, I learned JavaScript, then TypeScript, and
+      explored new frameworks like React.
+    </p>
+
+    <p class="mt-3 text-lg text-text">
+      Later on, I shifted from JavaScript, which had become my primary language for web app
+      development, to new languages that I'm still exploring and learning, such as Go and Rust, to
+      specialize not only in web development but also in other areas. During this time, I started
+      making my first contributions to open-source projects, starting with translations and
+      gradually moving on to small code contributions like refactoring and adding small functions.
+    </p>
+
+    <p class="mt-3 text-lg text-text">
+      In the future, I hope to learn new things like creating Android apps, artificial intelligence,
+      and much more, turning this passion into a career, the job of my dreams.
+    </p>
+
+    <div class="inline-flex items-baseline">
+      <h1 class="mt-2 text-gray-600">Not enough information? Contact me at:</h1>
+      <a href="mailto:inbox@vclemenzi.dev" class="ml-1 text-gray-600 underline"
+        >inbox@vclemenzi.dev</a
+      >
+    </div>
+  </div>
+  <footer id="links" class="border-t-2">
+    <div class="mb-4 mt-4 hidden md:flex md:justify-center">
+      <a
+        class="flex cursor-pointer items-center hover:underline"
+        href="https://github.com/vclemenzi"
+        ><Icon name="mdi:github" class="mr-1 h-7 w-7" /> github.com/vclemenzi</a
+      >
+      <span class="ml-1 mr-1 text-gray-500"></span>
+      <a class="flex cursor-pointer items-center hover:underline" href="https://t.me/vclemenzi"
+        ><Icon name="ic:outline-telegram" class="mr-1 h-7 w-7" /> t.me/vclemenzi</a
+      >
+      <span class="ml-1 mr-1 cursor-pointer text-gray-500"></span>
+      <a
+        class="flex cursor-pointer items-center hover:underline"
+        href="https://matrix.to/#/@thebigbot:matrix.org"
+        ><Icon name="simple-icons:matrix" class="mr-1 h-6 w-6" /> @vclemenzi:matrix.org</a
+      >
+      <span class="ml-1 mr-1 text-gray-500"></span>
+      <a class="flex cursor-pointer items-center hover:underline" href="mailto:inbox@vclemenzi.dev"
+        ><Icon name="majesticons:mail-line" class="mr-1 h-6 w-6" /> inbox@vclemenzi.dev</a
+      >
+    </div>
+  </footer>
+</Layout>

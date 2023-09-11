@@ -1,0 +1,5 @@
+{
+	"runtime": "nodejs18.x",
+	"handler": "home/thebigbot/dev/website/dist/pages/skills/entry.mongodb.astro.mjs",
+	"launcherType": "Nodejs"
+}
