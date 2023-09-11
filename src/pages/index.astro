@@ -1,33 +1,108 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro"
+import Navbar from "../components/Navbar.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Valerio Clemenzi">
+  <Navbar />
 
- <Navbar />
+  <div class="mb-8 mt-24 text-center md:flex md:text-left">
+    <div class="md:flex md:w-1/2 md:items-center md:justify-center">
+      <div>
+        <h1 class="text-5xl font-bold text-text">
+          Hello, I'm <span class="underline">Valerio</span>
+        </h1>
+        <p class="mt-2 text-lg text-gray-500">I am a young Italian developer</p>
 
- <div class="flex mt-24 mb-8">
-  <div class="w-1/2 flex justify-center items-center">
-    <div>
-      <h1 class="text-text text-5xl font-bold">Hello, I'm <span class="underline">Valerio</span></h1>
-      <p class="text-gray-500 mt-2 text-lg">I am a young Italian developer</p>
-
-      <div class="flex mt-4">
-        <button class="rounded-md p-2 pl-7 pr-7 bg-gyellow text-text mr-3 hover:underline font-semibold">
-          Who i am?
-        </button>
-        <button class="rounded-md p-2 pl-7 pr-7 bg-gpurple text-text hover:underline font-semibold">
-          What i do?
-        </button>
+        <div class="mt-4 flex">
+          <a href="#about">
+            <button
+              class="mr-3 rounded-md bg-gyellow p-2 pl-7 pr-7 font-semibold text-text hover:underline"
+            >
+              Who i am?
+            </button>
+          </a>
+          <a href="#skills">
+            <button
+              class="rounded-md bg-gpurple p-2 pl-7 pr-7 font-semibold text-text hover:underline"
+            >
+              What i do?
+            </button>
+          </a>
+        </div>
       </div>
+    </div>
+
+    <div class="hidden md:flex md:w-1/2 md:items-center md:justify-center">
+      <img src="/favicon.ico" class="h-60 w-60 rounded-full border-8 border-ggreen" />
     </div>
   </div>
 
-  <div class="w-1/2 flex justify-center items-center">
-    <img src="/favicon.ico" class="rounded-full w-60 h-60 border-ggreen border-8" />
-  </div>
- </div>
+  <hr />
 
- <hr />
+  <div id="about" class="m-5 rounded-md p-4 2xl:ml-96 2xl:mr-96">
+    <h1 class="text-4xl font-bold text-text">About Me!</h1>
+    <p class="mt-3 text-lg text-text">
+      Hello, I'm Valerio, and I'm a 14-year-old computer enthusiast. It all began when I first tried
+      to create a bot for the Discord messaging platform, and it was love at first sight. So, from
+      that day on, I started constantly learning new things: new programming languages, new habits,
+      new goals. I quickly transitioned from Windows to Linux and replaced many of my software with
+      open-source versions that respected my privacy. In no time, I learned JavaScript, then
+      TypeScript, and explored new frameworks, and so on.
+    </p>
+
+    <p class="mt-3 text-lg text-text">
+      Later on, I shifted from JavaScript, which had become my primary language for web development,
+      to new languages that I'm still exploring and learning, such as Go and Rust, to specialize not
+      only in web development but also in other areas
+    </p>
+
+    <p class="mt-3 text-lg text-text">
+      In the future, I hope to learn new things like creating Android apps, artificial intelligence,
+      and much more, turning this passion into a career, the job of my dreams.
+    </p>
+
+    <div class="inline-flex items-baseline">
+      <h1 class="mt-2 text-gray-600">Not enough information? Contact me at:</h1>
+      <a href="mailto:inbox@vclemenzi.dev" class="ml-1 text-gray-600 underline"
+        >inbox@vclemenzi.dev</a
+      >
+    </div>
+  </div>
+
+  <hr />
+  <div id="skills" class="mt-5 2xl:ml-96 2xl:mr-96">
+    <h1 class="mb-4 text-center text-4xl font-bold text-text">Skills and Stack</h1>
+
+    <div class="md:grid md:grid-cols-2 md:gap-4">
+      <Card
+        title="Front-end Development"
+        desc="I do front-end development for websites using an API stack of software: React (also with Next.js), Svelte, and Astro. For styling, I usually rely on Tailwind CSS for its simplicity, but I also know and appreciate many UI libraries like Mantine, Shadcn UI, and Skeleton. I often challenge myself by creating some websites just for fun, and if I can, I put them online!"
+      />
+
+      <Card
+        title="Back-end Development"
+        desc="I do back-end development using Golang, Node.js, and I also handle authorization with JSON Web Tokens (JWT). I'm experienced in working with databases like Redis (including Vercel's KV), MongoDB, and PostgreSQL (with Supabase and Neon). I also use Backend as a Service (BaaS) platforms like Supabase, and sometimes others as well."
+      />
+    </div>
+  </div>
+
+  <footer id="links" class="border-t-2">
+    <div class="mb-4 mt-4 hidden md:flex md:justify-center">
+      <a class="cursor-pointer hover:underline" href="https://github.com/vclemenzi"
+        >github.com/vclemenzi</a
+      >
+      <span class="ml-1 mr-1 text-gray-500">|</span>
+      <a class="cursor-pointer hover:underline" href="https://t.me/vclemenzi">t.me/vclemenzi</a>
+      <span class="ml-1 mr-1 cursor-pointer text-gray-500">|</span>
+      <a class="cursor-pointer hover:underline" href="https://matrix.to/#/@thebigbot:matrix.org"
+        >@vclemenzi:matrix.org</a
+      >
+      <span class="ml-1 mr-1 text-gray-500">|</span>
+      <a class="cursor-pointer hover:underline" href="mailto:inbox@vclemenzi.dev"
+        >inbox@vclemenzi.dev</a
+      >
+    </div>
+  </footer>
 </Layout>
