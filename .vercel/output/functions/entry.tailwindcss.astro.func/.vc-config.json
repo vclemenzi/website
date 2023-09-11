@@ -1,5 +1,0 @@
-{
-	"runtime": "nodejs18.x",
-	"handler": "home/thebigbot/dev/website/dist/pages/skills/entry.tailwindcss.astro.mjs",
-	"launcherType": "Nodejs"
-}
