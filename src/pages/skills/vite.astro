@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+---
+
+<Layout title="Vite | Skill">
+  <Navbar />
+  <div class="mt-16 block p-1 md:flex md:justify-center">
+    <div class="ml-2 mr-2 md:w-1/2">
+      <h1 class="text-center text-3xl font-bold text-text md:text-left">The Vite Bundler</h1>
+      <p class="mb-4 mt-4">
+        Vite is my preferred bundler. Its hot reloading and integrations with a myriad of frameworks
+        make it excellent for single-page applications. I also find its set of extensions very
+        useful as they allow you to extend it in various ways.
+      </p>
+      <hr />
+      <div class="mt-4 md:ml-8 md:mr-8"></div>
+    </div>
+    <div class="hidden w-1/3 justify-end md:flex">
+      <img src="https://skillicons.dev/icons?i=vite" class="h-40 w-40" />
+    </div>
+  </div>
+</Layout>

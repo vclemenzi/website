@@ -1,0 +1,32 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import RepoCard from "../../components/RepoCard.astro";
+---
+
+<Layout title="React | Skill">
+  <Navbar />
+  <div class="mt-16 block p-1 md:flex md:justify-center">
+    <div class="ml-2 mr-2 md:w-1/2">
+      <h1 class="text-center text-3xl font-bold text-text md:text-left">The React Framework</h1>
+      <p class="mb-4 mt-4">
+        React was my first framework that greatly facilitated the creation of web apps and
+        interactive pages with its multitude of hooks. Today, I primarily use React for large and
+        complex websites, while for smaller sites, I use frameworks like Astro.
+      </p>
+      <hr />
+      <div class="mt-4 md:ml-8 md:mr-8">
+        <RepoCard owner="vclemenzi" name="codeshare" desc="Share your code, fast and easy" />
+
+        <RepoCard
+          owner="vclemenzi"
+          name="pizzagpt"
+          desc="Pizza GPT: A chatgpt client for the italian users because the main was banned :( "
+        />
+      </div>
+    </div>
+    <div class="hidden w-1/3 justify-end md:flex">
+      <img src="https://skillicons.dev/icons?i=react" class="h-40 w-40" />
+    </div>
+  </div>
+</Layout>
