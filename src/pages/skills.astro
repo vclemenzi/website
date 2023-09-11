@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Tool from "../components/Tool.astro";
+
+interface Tool {
+  src: string;
+}
+
+const tools: Tool[] = [
+  {
+    src: "https://skillicons.dev/icons?i=go",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=rust",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=js",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=ts",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=react",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=nextjs",
+  },
+  {
+    src: "/tools/jwt.png",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=nodejs",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=redis",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=postgresql",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=mongodb",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=astro",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=tailwindcss",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=vite",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=neovim",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=github",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=linux",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=tauri",
+  },
+  {
+    src: "https://skillicons.dev/icons?i=docker",
+  },
+];
+---
+
+<Layout title="Skills">
+  <Navbar />
+  <div class="2xl:ml-96 2xl:mr-96">
+    <h1 class="mb-4 mt-10 text-center text-4xl font-bold text-text">Languages, Tools & Software</h1>
+    <p class="mb-14 ml-3 mr-3 text-center">
+      Every day, I try to learn something new to expand my skills, and currently, <br /> I have
+      managed to get to know many tools, more or less in-depth.
+    </p>
+    <hr />
+    <div class="grid grid-cols-2 place-items-center gap-4 md:grid-cols-5">
+      {
+        tools.map((y) => {
+          return <Tool src={y.src} />;
+        })
+      }
+    </div>
+
+    <footer class="mt-5 text-center">
+      The icons used are from <a href="https://skillicons.dev/">Skill Icons</a>
+    </footer>
+  </div>
+</Layout>

@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Valerio Clemenzi">
@@ -20,14 +19,14 @@ import Card from "../components/Card.astro";
             <button
               class="mr-3 rounded-md bg-gyellow p-2 pl-7 pr-7 font-semibold text-text hover:underline"
             >
-              Who i am?
+              Who am I?
             </button>
           </a>
-          <a href="#skills">
+          <a href="/skills">
             <button
               class="rounded-md bg-gpurple p-2 pl-7 pr-7 font-semibold text-text hover:underline"
             >
-              What i do?
+              What do I do?
             </button>
           </a>
         </div>
@@ -70,24 +69,6 @@ import Card from "../components/Card.astro";
       >
     </div>
   </div>
-
-  <hr />
-  <div id="skills" class="mt-5 2xl:ml-96 2xl:mr-96">
-    <h1 class="mb-4 text-center text-4xl font-bold text-text">Skills and Stack</h1>
-
-    <div class="md:grid md:grid-cols-2 md:gap-4">
-      <Card
-        title="Front-end Development"
-        desc="I do front-end development for websites using an API stack of software: React (also with Next.js), Svelte, and Astro. For styling, I usually rely on Tailwind CSS for its simplicity, but I also know and appreciate many UI libraries like Mantine, Shadcn UI, and Skeleton. I often challenge myself by creating some websites just for fun, and if I can, I put them online!"
-      />
-
-      <Card
-        title="Back-end Development"
-        desc="I do back-end development using Golang, Node.js, and I also handle authorization with JSON Web Tokens (JWT). I'm experienced in working with databases like Redis (including Vercel's KV), MongoDB, and PostgreSQL (with Supabase and Neon). I also use Backend as a Service (BaaS) platforms like Supabase, and sometimes others as well."
-      />
-    </div>
-  </div>
-
   <footer id="links" class="border-t-2">
     <div class="mb-4 mt-4 hidden md:flex md:justify-center">
       <a class="cursor-pointer hover:underline" href="https://github.com/vclemenzi"
