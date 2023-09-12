@@ -9,7 +9,9 @@ module.exports = {
         gyellow: "#facc15",
         gpurple: "#c084fc",
         ggreen: "#4ade80",
-        gorange: "#fb923c"
+        gorange: "#fb923c",
+        "background-dark": "#111314",
+        "text-dark": "#ddd2c8"
       },
     },
   },
