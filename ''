@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import { Icon } from "astro-icon";
+
+const fromInstagram = Astro.url.searchParams.get("fbclid");
 ---
 
 <Layout title="Valerio Clemenzi">
@@ -72,7 +74,7 @@ import { Icon } from "astro-icon";
     </div>
   </div>
   <footer id="links">
-    <div class="mb-4 mt-4 hidden md:flex md:justify-center">
+    <div class="mb-4 mt-4 grid flex md:justify-center">
       <a
         class="flex cursor-pointer items-center hover:underline"
         href="https://github.com/vclemenzi"
@@ -91,28 +93,6 @@ import { Icon } from "astro-icon";
       <span class="ml-1 mr-1 text-gray-500"></span>
       <a class="flex cursor-pointer items-center hover:underline" href="mailto:inbox@vclemenzi.dev"
         ><Icon name="majesticons:mail-line" class="mr-1 h-6 w-6" /> inbox@vclemenzi.dev</a
-      >
-    </div>
-
-    <div class="mb-4 mt-4 flex justify-center md:hidden">
-      <a
-        class="flex cursor-pointer items-center hover:underline"
-        href="https://github.com/vclemenzi"
-      >
-        <Icon name="mdi:github" class="mr-2 h-10 w-10" />
-      </a>
-      <a class="flex cursor-pointer items-center hover:underline" href="https://t.me/vclemenzi"
-        ><Icon name="ic:outline-telegram" class="mr-2 h-10 w-10" />
-      </a>
-      <span class="ml-1 mr-1 cursor-pointer text-gray-500"></span>
-      <a
-        class="flex cursor-pointer items-center hover:underline"
-        href="https://matrix.to/#/@thebigbot:matrix.org"
-        ><Icon name="simple-icons:matrix" class="mr-2 h-9 w-9" />
-      </a>
-      <span class="ml-1 mr-1 text-gray-500"></span>
-      <a class="flex cursor-pointer items-center hover:underline" href="mailto:inbox@vclemenzi.dev"
-        ><Icon name="majesticons:mail-line" class="mr-2 h-9 w-9" /></a
       >
     </div>
   </footer>
