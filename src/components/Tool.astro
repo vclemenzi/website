@@ -9,6 +9,12 @@ const { src, id } = Astro.props as Props;
 
 <div class="p-4">
   <a href={`/skills/${id}`}>
-    <img class="rounded-xl transition hover:scale-110" width="100" height="100" src={src} />
+    <img
+      transition:name={id}
+      class="rounded-xl transition hover:scale-110"
+      width="100"
+      height="100"
+      src={src}
+    />
   </a>
 </div>
