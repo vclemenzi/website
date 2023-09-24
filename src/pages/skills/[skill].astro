@@ -235,7 +235,7 @@ const skills: SkillsData = {
 if (!skills[skill]) return Astro.redirect("/404");
 ---
 
-<Layout title={`${skill} | Skill`}>
+<Layout title={`${skill.charAt(0).toUpperCase() + skill?.slice(1)} | Skill`}>
   <Navbar />
   <div class="mt-24 block p-1 md:flex md:justify-center">
     <div class="ml-2 mr-2 md:w-1/2">
