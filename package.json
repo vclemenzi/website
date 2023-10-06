@@ -11,13 +11,10 @@
     "format": "prettier \"./**/*.{js,ts,astro}\" --write"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.0.2",
-    "@astrojs/netlify": "^3.0.1",
     "@astrojs/tailwind": "^5.0.0",
     "@astrojs/vercel": "^4.0.0",
     "astro": "^3.0.3",
     "astro-icon": "^0.8.1",
-    "axios": "^1.5.0",
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
