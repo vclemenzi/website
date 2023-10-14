@@ -1,0 +1,43 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="I'm Valerio, and I'm a 14-year-old computer enthusiast" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <title>{title}</title>
+    <ViewTransitions fallback="swap" />
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      body {
+        @apply bg-background text-text;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          @apply bg-background-dark text-text-dark;
+        }
+      }
+
+      a {
+        @apply font-semibold;
+      }
+
+      a.link {
+        @apply ml-1 mr-1 text-white;
+      }
+    </style>
+  </body>
+</html>

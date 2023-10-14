@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+  owner: string;
+  name: string;
+  desc: string;
+}
+
+const { owner, name, desc } = Astro.props as Props;
+---
+
+<div class="mt-3 w-full rounded-md border-text p-4 shadow-md">
+  <div class="flow-root">
+    <a class="float-left flex items-center" href={`https://github.com/${owner}/${name}`}>
+      <Icon name="mdi:github" class="mr-1 h-7 w-7" />
+      <span>{owner}/{name}</span>
+    </a>
+
+    <a class="float-right cursor-pointer">
+      <Icon name="ic:round-star" class="mr-1 h-7 w-7" />
+    </a>
+  </div>
+
+  <p class="ml-2">{desc}</p>
+</div>

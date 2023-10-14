@@ -1,129 +1,121 @@
 ---
-import IconMail from "../components/icons/IconMail.astro";
-import IconGithub from "../components/icons/IconGithub.astro";
-import IconTelegram from "../components/icons/IconTelegram.astro";
-import IconMatrix from "../components/icons/IconMatrix.astro";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import { Icon } from "astro-icon";
 ---
 
-<main class="container mx-auto md:px-36 lg:px-36 px-4 md:py-36 lg:py-36 py-8">
-  <h1 class="text-xl font-semibold flex items-center">
-    <img
-      src="/favicon.ico"
-      alt="pic"
-      class="rounded-full w-16 h-16 mr-4 hover:animate-spin hover:cursor-wait"
-    />
-    Hello! I&apos;m Valerio Clemenzi
-  </h1>
-  <br />
-  <p class="font-light">
-    Hi! I&apos;m Valerio Clemenzi, I come from Italy, and I really enjoy using
-    computers and experimenting with and learning about the world surrounding
-    this field. Currently, I&apos;m still attending school, but I hope that this
-    passion can become a job.
-  </p>
-  <br />
-  <p class="font-light">
-    I can use JavaScript and TypeScript quite well, along with many libraries
-    that can be found on the npm registry (such as Express, etc.). Lately,
-    I&apos;ve been looking at Deno and I really like it, especially now that you
-    can use npm modules. I enjoy using many frameworks, but primarily React,
-    although I&apos;m starting to look into Svelte. Meanwhile, I&apos;m learning
-    Rust, a fantastic language that allows me to express myself best thanks to
-    all its functions (I won&apos;t list them all because if you don&apos;t live
-    under a rock, you&apos;ve probably heard about them many times). Anyway, I
-    never refuse a game of Rocket, Minecraft, or Grand Theft Auto 5, which is my
-    favorite game, but I always end up breaking it with mods and have to
-    reinstall it :(
-  </p>
+<Layout title="Valerio Clemenzi">
+  <Navbar />
 
-  <br />
-  {/* Tools */}
-  <br />
+  <div class="mb-8 mt-28 text-center md:flex md:text-left">
+    <div class="md:flex md:w-1/2 md:items-center md:justify-center">
+      <div>
+        <h1 class="select-none text-5xl font-bold">
+          Hello, I'm <span class="underline">Valerio</span>
+        </h1>
+        <p class="mb-3 mt-2 select-none text-lg text-gray-500 dark:text-gray-400">
+          I am a young Italian developer
+        </p>
 
-  <h2 class="text-xl font-semibold">Favourite Tools</h2>
-  <br />
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div class="box">
-      <h3 class="text-lg font-semibold">Neovim</h3>
-      <p>I use Neovim as my main editor, and I really like it.</p>
+        <div class="mt-4 flex justify-center md:justify-start">
+          <a href="#about">
+            <button
+              class="mr-3 rounded-md bg-gyellow p-2 pl-7 pr-7 font-semibold hover:underline dark:text-text"
+            >
+              Who am I?
+            </button>
+          </a>
+          <a href="/skills">
+            <button
+              class="rounded-md bg-gpurple p-2 pl-7 pr-7 font-semibold hover:underline dark:text-text"
+            >
+              What do I do?
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="box">
-      <h3 class="text-lg font-semibold">Insomnia</h3>
-      <p>
-        I use Insomnia to test my APIs. It&apos;s really easy to use, and
-        it&apos;s really fast.
-      </p>
-    </div>
-
-    <div class="box">
-      <h3 class="text-lg font-semibold">Alacritty</h3>
-      <p>I use Alacritty as my terminal emulator. It&apos;s really fast.</p>
+    <div class="hidden md:flex md:w-1/2 md:items-center md:justify-center">
+      <img src="/favicon.ico" class="h-60 w-60 rounded-full border-8 border-ggreen" />
     </div>
   </div>
 
-  <br />
-  {/* Links */}
-  <br />
-
-  <h2 class="text-xl font-semibold">Links</h2>
-  <br />
-  <div>
-    <a href="mailto:inbox@vclemenzi.dev" class="flex items-center">
-      <IconMail />
-      <span class="ml-2 hover:underline">
-        <code>inbox@vclemenzi.dev</code>
-      </span>
-    </a>
-    <a href="https://github.com/vclemenzi" class="flex items-center">
-      <IconGithub />
-      <span class="ml-2 hover:underline">
-        <code>github.com/vclemenzi</code>
-      </span>
-    </a>
-    <a href="https://t.me/vclemenzi" class="flex items-center">
-      <IconTelegram />
-      <span class="ml-2 hover:underline">
-        <code>t.me/@vclemenzi</code>
-      </span>
-    </a>
-    <a
-      href="https://matrix.to/#/@thebigbot:matrix.org"
-      class="flex items-center"
-    >
-      <IconMatrix />
-      <span class="ml-2 hover:underline">
-        <code>@thebigbot:matrix.org</code>
-      </span>
-    </a>
-  </div>
-
-  <br />
-
-  <footer>
-    <p class="text-sm font-light">
-      Valerio Clemenzi &copy; 2023 - Made with Astro and Tailwind CSS
+  <div id="about" class="m-5 rounded-md p-4 md:ml-24 md:mr-24 2xl:ml-96 2xl:mr-96">
+    <h1 class="text-4xl font-bold">About Me!</h1>
+    <p class="mt-3 text-lg">
+      Hello, I'm Valerio, and I'm a 14-year-old computer enthusiast. I've been passionate about
+      computer science for about 2 years now. It all began when I first tried to create a bot for
+      the Discord messaging platform, and it was love at first sight. Since that day, I've been
+      constantly learning new things: new programming languages, new habits, and new goals. I
+      quickly transitioned from Windows to Linux and replaced many of my software with open-source
+      versions that respected my privacy. In no time, I learned JavaScript, then TypeScript, and
+      explored new frameworks like React.
     </p>
+
+    <p class="mt-3 text-lg">
+      Later on, I shifted from JavaScript, which had become my primary language for web app
+      development, to new languages that I'm still exploring and learning, such as Go and Rust, to
+      specialize not only in web development but also in other areas. During this time, I started
+      making my first contributions to open-source projects, starting with translations and
+      gradually moving on to small code contributions like refactoring and adding small functions.
+    </p>
+
+    <p class="mt-3 text-lg">
+      In the future, I hope to learn new things like creating Android apps, artificial intelligence,
+      and much more, turning this passion into a career, the job of my dreams.
+    </p>
+
+    <div class="inline-flex items-baseline">
+      <h1 class="mt-2 text-gray-600 dark:text-gray-400">Not enough information? Contact me at:</h1>
+      <a href="mailto:inbox@vclemenzi.dev" class="ml-1 text-gray-600 underline dark:text-gray-400"
+        >inbox@vclemenzi.dev</a
+      >
+    </div>
+  </div>
+  <footer id="links">
+    <div class="mb-4 mt-4 hidden md:flex md:justify-center">
+      <a
+        class="flex cursor-pointer items-center hover:underline"
+        href="https://github.com/vclemenzi"
+        ><Icon name="mdi:github" class="mr-1 h-7 w-7" /> github.com/vclemenzi</a
+      >
+      <span class="ml-1 mr-1 text-gray-500"></span>
+      <a class="flex cursor-pointer items-center hover:underline" href="https://t.me/vclemenzi"
+        ><Icon name="ic:outline-telegram" class="mr-1 h-7 w-7" /> t.me/vclemenzi</a
+      >
+      <span class="ml-1 mr-1 cursor-pointer text-gray-500"></span>
+      <a
+        class="flex cursor-pointer items-center hover:underline"
+        href="https://matrix.to/#/@thebigbot:matrix.org"
+        ><Icon name="simple-icons:matrix" class="mr-1 h-6 w-6" /> @vclemenzi:matrix.org</a
+      >
+      <span class="ml-1 mr-1 text-gray-500"></span>
+      <a class="flex cursor-pointer items-center hover:underline" href="mailto:inbox@vclemenzi.dev"
+        ><Icon name="majesticons:mail-line" class="mr-1 h-6 w-6" /> inbox@vclemenzi.dev</a
+      >
+    </div>
+
+    <div class="mb-4 mt-4 flex justify-center md:hidden">
+      <a
+        class="flex cursor-pointer items-center hover:underline"
+        href="https://github.com/vclemenzi"
+      >
+        <Icon name="mdi:github" class="mr-2 h-10 w-10" />
+      </a>
+      <a class="flex cursor-pointer items-center hover:underline" href="https://t.me/vclemenzi"
+        ><Icon name="ic:outline-telegram" class="mr-2 h-10 w-10" />
+      </a>
+      <span class="ml-1 mr-1 cursor-pointer text-gray-500"></span>
+      <a
+        class="flex cursor-pointer items-center hover:underline"
+        href="https://matrix.to/#/@thebigbot:matrix.org"
+        ><Icon name="simple-icons:matrix" class="mr-2 h-9 w-9" />
+      </a>
+      <span class="ml-1 mr-1 text-gray-500"></span>
+      <a class="flex cursor-pointer items-center hover:underline" href="mailto:inbox@vclemenzi.dev"
+        ><Icon name="majesticons:mail-line" class="mr-2 h-9 w-9" /></a
+      >
+    </div>
   </footer>
-</main>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-  * {
-    @apply bg-background text-white;
-  }
-
-  body {
-    @apply bg-background text-white;
-    font-family: 'Lato', sans-serif;
-  }
-
-  .box {
-    @apply border border-gray-200 rounded-md p-4 max-w-sm;
-  }
-
-  .box:hover {
-    @apply border-gray-400 cursor-default;
-  }
-</style>
+</Layout>
