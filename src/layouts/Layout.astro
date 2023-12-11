@@ -16,8 +16,8 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <main class="flex items-center justify-center p-2 pt-10">
-      <div class="w-2/4">
+    <main class="flex items-center justify-center p-6 md:p-2 md:pt-10">
+      <div class="md:w-2/4">
         <slot />
       </div>
     </main>
@@ -29,9 +29,9 @@ const { title } = Astro.props;
     @apply bg-background text-text;
   }
 
-  /* Stack Link */ 
-  
+  /* Stack Link */
+
   .slink {
-    @apply bg-surface p-1 pl-2 pr-2 rounded-md;
+    @apply rounded-md bg-surface p-1 pl-2 pr-2;
   }
 </style>
