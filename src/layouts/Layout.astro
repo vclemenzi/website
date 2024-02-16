@@ -16,25 +16,22 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
-    <style is:global>
-      body {
-        @apply bg-background text-text;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          @apply bg-background-dark text-text-dark;
-        }
-      }
-
-      a {
-        @apply font-semibold;
-      }
-
-      a.link {
-        @apply ml-1 mr-1 text-white;
-      }
-    </style>
+    <main class="flex items-center justify-center p-6 md:p-2 md:pt-10">
+      <div class="md:w-2/4">
+        <slot />
+      </div>
+    </main>
   </body>
 </html>
+
+<style is:global>
+  body {
+    @apply bg-background text-text;
+  }
+
+  /* Stack Link */
+
+  .slink {
+    @apply rounded-md bg-surface p-1 pl-2 pr-2;
+  }
+</style>
