@@ -1,9 +1,8 @@
 ---
-interface Props {
-  title: string;
-}
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-const { title } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <!doctype html>
@@ -13,25 +12,17 @@ const { title } = Astro.props;
     <meta name="description" content="I'm Valerio, and I'm a 14-year-old computer enthusiast" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <title>{title}</title>
+    <title>{frontmatter.title || "Valerio Clemenzi"}</title>
   </head>
-  <body>
+  <body class="bg-background text-white">
     <main class="flex items-center justify-center p-6 md:p-2 md:pt-10">
-      <div class="md:w-2/4">
-        <slot />
+      <div class="space-y-5 md:w-2/4">
+        <Header />
+        <div class="prose prose-invert prose-h1:text-3xl">
+          <slot />
+        </div>
+        <Footer />
       </div>
     </main>
   </body>
 </html>
-
-<style is:global>
-  body {
-    @apply bg-background text-text;
-  }
-
-  /* Stack Link */
-
-  .slink {
-    @apply rounded-md bg-surface p-1 pl-2 pr-2;
-  }
-</style>
