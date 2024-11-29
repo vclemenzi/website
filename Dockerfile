@@ -1,4 +1,4 @@
-FROM node:lts as build
+FROM node:lts AS build
 WORKDIR /app
 
 COPY package.json ./
@@ -9,7 +9,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:lts as production
+FROM node:lts AS production
 
 WORKDIR /app
 
